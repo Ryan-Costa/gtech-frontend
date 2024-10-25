@@ -6,45 +6,24 @@ import headset from "../../assets/img/headset.png";
 import { JeansIcon } from "../Icons/jeans-icon";
 import { HeadphoneIcon } from "../Icons/headphone-icon";
 import { TenisIcon } from "../Icons/tenis-icon";
-import { FirstCardDestaques } from "./first-card-destaques"
-import { SecondCardDestaques } from "./second-card-destaques";
+import { Categorias } from "./categorias";
+import CartaoDestaques from "./cartao-destaques";
 
 
 export default function Destaques() {
   return (
-    <div className="bg-[#F9F8FE] w-full flex flex-col items-center justify-center max-w-screen-2xl">
+    <div className="bg-[#F9F8FE] w-full flex flex-col max-w-screen-2xl items-center justify-center">
       {/* DESTAQUES 1 */}
 
       {/* CARD 1 */}
-      <div className="flex flex-col gap-4 mt-9 mb-5">
+      <div className="flex flex-col gap-4 mt-9 mb-5 w-full">
         <p className="text-start text-2xl text-[#474747] font-bold">Coleções em destaque</p>
 
-        <div className="flex gap-3">
+        <div className="flex gap-3 w-full">
           {/* CARD 1 */}
-          {/* <FirstCardDestaques title={`Novo drop<br /> Supreme`} image={supreme} /> */}
-
-          <div className="relative w-[405px] bg-[#D8E3F2] h-[251px] rounded-lg py-9 px-8">
-            <span className="bg-[#E7FF86] py-1 px-3 rounded-full text-[#474747] font-bold text-sm">30% OFF</span>
-            <p className="text-[#1F1F1F] mt-[10px] mb-[20px] text-3xl font-bold">Novo drop<br /> Supreme</p>
-            <button className="bg-white w-[153px] h-12 rounded-lg text-[#C92071] z-20 relative font-bold text-lg">Comprar</button>
-            <img src={supreme} alt="Camisa" className="absolute right-0 bottom-0 z-10" />
-          </div>
-
-          {/* CARD 2 */}
-          <div className="relative w-[405px] bg-[#D8E3F2] h-[251px] rounded-lg py-9 px-8">
-            <span className="bg-[#E7FF86] py-1 px-3 rounded-full text-[#474747] font-bold text-sm" >30% OFF</span>
-            <p className="text-[#1F1F1F] mt-[10px] mb-[20px] text-3xl font-bold">Coleção <br />Adidas </p>
-            <button className="bg-white w-[153px] h-12 rounded-lg text-[#C92071] z-20 relative font-bold text-lg" >Comprar</button>
-            <img src={tenis} alt="camisa" className="absolute right-0 bottom-0 z-10" />
-          </div>
-
-          {/*  CARD 3 */}
-          <div className="relative w-[405px] bg-[#D8E3F2] h-[251px] rounded-lg py-9 px-8">
-            <span className="bg-[#E7FF86] py-1 px-3 rounded-full text-[#474747] font-bold text-sm" >30% OFF</span>
-            <p className="text-[#1F1F1F] mt-[10px] mb-[20px] text-3xl font-bold">Novo <br /> Beats Bass</p>
-            <button className="bg-white w-[153px] h-12 rounded-lg text-[#C92071] z-20 relative font-bold text-lg" >Comprar</button>
-            <img src={headset} alt="camisa" className="absolute right-0 bottom-0 z-10" />
-          </div>
+          <CartaoDestaques image={supreme}>Novo drop<br /> Supreme</CartaoDestaques>
+          <CartaoDestaques image={tenis}>Coleção <br />Adidas </CartaoDestaques>
+          <CartaoDestaques image={headset}>Novo <br /> Beats Bass</CartaoDestaques>
         </div>
       </div>
 
@@ -54,18 +33,13 @@ export default function Destaques() {
         <p className="text-start text-2xl text-[#474747] font-bold">Coleções em destaque</p>
 
         <div className="flex gap-12 mt-5">
-          <SecondCardDestaques label="Camisetas"><TShirtIcon /></SecondCardDestaques>
-          <SecondCardDestaques label="Calças"><JeansIcon /></SecondCardDestaques>
-          <SecondCardDestaques label="Bonés"><JeansIcon /></SecondCardDestaques>
-          <SecondCardDestaques label="Headphones"><HeadphoneIcon /></SecondCardDestaques>
-          <SecondCardDestaques label="Tenis"><TenisIcon /></SecondCardDestaques>
-
-
+          <Categorias label="Camisetas"><TShirtIcon /></Categorias>
+          <Categorias label="Calças"><JeansIcon /></Categorias>
+          <Categorias label="Bonés"><JeansIcon /></Categorias>
+          <Categorias label="Headphones"><HeadphoneIcon /></Categorias>
+          <Categorias label="Tenis"><TenisIcon /></Categorias>
         </div>
-
-
       </div>
-
     </div>
   )
 }
