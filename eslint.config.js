@@ -35,6 +35,7 @@ export default [
       ],
       // Regra para forçar o uso de aspas duplas
       "quotes": ["error", "double"],
+      "react/prop-types": "off"
     },
   },
 ]
