@@ -2,7 +2,7 @@ import { useState } from "react";
 import Slide1 from "./Slide1";
 import Slide2 from "./Slide2";
 import Slide3 from "./Slide3";
-import Slide4 from "./Slide4";
+// import Slide4 from "./Slide4";
 import { NextIcon } from "../Icons/next-icon";
 import { PrevIcon } from "../Icons/prev-icon";
 
@@ -13,7 +13,7 @@ const Slide = () => {
     <Slide1 key={1} />,
     <Slide2 key={2} />,
     <Slide3 key={3} />,
-    <Slide4 key={4} />,
+    // <Slide4 key={4} />,
   ];
 
   const handleNext = () => {
