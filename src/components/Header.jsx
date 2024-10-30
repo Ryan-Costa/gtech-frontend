@@ -1,17 +1,20 @@
+import { Link } from "react-router-dom";
 import carrinho from "../assets/img/carrinho.svg";
 import logo from "../assets/img/logo.svg";
 import lupa from "../assets/img/lupa.svg";
 
 export default function Header() {
   return (
-    <header className="w-full h-48 bg-white flex justify-center">
+    <header className="w-full h-48 bg-white flex justify-center ">
       <div className="w-full flex flex-col max-w-screen-2xl">
         <div className="mr-28 ml-28 py-8 flex justify-between">
           <div className="flex items-center justify-between w-full">
-            <img src={logo} alt="logo" className="h-10 mr-4" />
+            <Link to="/">
+              <img src={logo} alt="logo" className="h-10 mr-4" />
+            </Link>
 
             <div className="flex items-center border border-gray-300 rounded max-w-[559px] w-full pr-4">
-              <input type="text" placeholder="Pesquisar produto..." className="w-full pl-4 py-2" />
+              <input type="text" placeholder="Pesquisar produto..." className="rounded w-full pl-4 py-2" />
               <img src={lupa} alt="Lupa" className="h-5" />
             </div>
 
@@ -29,28 +32,28 @@ export default function Header() {
           </div>
         </div>
 
-        <nav className="container">
+        <nav className="container mt-2">
           <div className="ml-24 px-4 py-2 flex">
             <ul className="flex space-x-4">
               <li>
-                <a href="#" className="hover:underline hover:underline-offset-4 hover:text-[#C92071] text-[#474747]">
+                <Link to="/" className="hover:underline hover:underline-offset-4 hover:font-medium hover:text-[#C92071] text-[#474747]">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline hover:underline-offset-4 hover:text-[#C92071] text-[#474747]">
+                <Link to="/product-list" className="hover:underline hover:underline-offset-4 hover:font-medium hover:text-[#C92071] text-[#474747]">
                   Produtos
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline hover:underline-offset-4 hover:text-[#C92071] text-[#474747]">
+                <Link to="/categories" className="hover:underline hover:underline-offset-4 hover:font-medium hover:text-[#C92071] text-[#474747]">
                   Categorias
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="#" className="hover:underline hover:underline-offset-4 hover:text-[#C92071] text-[#474747]">
+                <Link to="/my-orders" className="hover:underline hover:underline-offset-4 hover:font-medium hover:text-[#C92071] text-[#474747]">
                   Meus Pedidos
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
