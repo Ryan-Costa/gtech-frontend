@@ -4,6 +4,7 @@ import Footer from "./components/Footer"
 import Slide from "./components/Slider"
 import Destaques from "./components/Destaques"
 import ProdutosEmAlta from "./components/Produtos/produtos-em-alta"
+import Jordan from "./components/Destaques/jordan"
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <div className="w-full flex flex-col items-center">
         <Destaques />
         <ProdutosEmAlta />
+        <Jordan />
       </div>
       {/* </div> */}
       <Footer />
