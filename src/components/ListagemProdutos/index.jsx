@@ -1,6 +1,7 @@
 import { produtos } from "../../constantes/produtos";
 import CartaoProduto from "../Produtos/cartao-produto";
 import Checkbox from "./checkbox";
+import Radio from "./radio";
 
 const ListagemProdutos = () => {
   
@@ -36,6 +37,29 @@ const ListagemProdutos = () => {
               <Checkbox label="Adidas" />
               <Checkbox label="Adidas" />
             </div>
+
+            <p className="font-semibold text-[#474747] text-sm mt-5">Categoria</p>
+            
+            <div className="space-y-2.5">
+              <Checkbox label="Esporte e lazer" />
+              <Checkbox label="Casual" />
+              <Checkbox label="Utilitário" />
+              <Checkbox label="Corrida" />
+            </div>
+
+            <p className="font-semibold text-[#474747] text-sm mt-5">Gênero</p>
+            
+            <div className="space-y-2.5">
+              <Checkbox label="Masculino" />
+              <Checkbox label="Feminino" />
+              <Checkbox label="Unisex" />
+            </div>
+
+            <p className="font-semibold text-[#474747] text-sm mt-5">Estado</p>
+            <div className="space-y-2 5">
+              <Radio />
+            </div>
+
           </div>
           <div className="w-full grid grid-cols-3 gap-3.5">
             {produtos.map((produto, i) => (
