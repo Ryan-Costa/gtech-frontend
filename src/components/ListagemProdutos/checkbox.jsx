@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 const Checkbox = ({ label }) => {
-  const [selectedDoc, setSelectedDoc] = useState(false);
+  const [selectedOption, setSelectedOption] = useState(false);
 
   const toggleCheckbox = () => {
-    console.log(selectedDoc);
-    setSelectedDoc(!selectedDoc);
+    console.log(selectedOption);
+    setSelectedOption(!selectedOption);
   };
 
   return (
@@ -13,13 +13,17 @@ const Checkbox = ({ label }) => {
       <input
         type="checkbox"
         className="absolute h-0 w-0 opacity-0"
-        checked={selectedDoc}
+        checked={selectedOption}
         onChange={toggleCheckbox}
       />
-      <div
-        className={`flex h-[22px] w-[22px] items-center overflow-hidden justify-center rounded ${selectedDoc ? "bg-primary" : "border border-[#C92071]"}`}
+      <label
+        onClick={toggleCheckbox}
+        className="flex gap-2 text-[#474747]"
       >
-        {selectedDoc && (
+      <div
+        className={`flex h-[22px] cursor-pointer w-[22px] items-center overflow-hidden justify-center rounded ${selectedOption ? "bg-primary" : "border border-[#C92071]"}`}
+      >
+        {selectedOption && (
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="size-full roundeed bg-[#C92071] text-white"
@@ -34,11 +38,8 @@ const Checkbox = ({ label }) => {
           </svg>
         )}
       </div>
-      <label
-        onClick={toggleCheckbox}
-        className="ml-2 text-[#474747]"
-      >
-        {label}
+
+      {label}
       </label>
     </div>
   );

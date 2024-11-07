@@ -1,11 +1,9 @@
 import { produtos } from "../../constantes/produtos";
 import CartaoProduto from "../Produtos/cartao-produto";
 import Checkbox from "./checkbox";
+import RadioGroup from "./radio-group";
 
-const ListagemProdutos = () => {
-  
-
-  
+const ListagemProdutos = () => {  
   return (
     <div className="w-full bg-[#F9F8FE] flex items-center flex-col mt-14">
       <div className="w-full max-w-screen-2xl">
@@ -36,6 +34,26 @@ const ListagemProdutos = () => {
               <Checkbox label="Adidas" />
               <Checkbox label="Adidas" />
             </div>
+
+            <p className="font-semibold text-[#474747] text-sm mt-5">Categoria</p>
+            
+            <div className="space-y-2.5">
+              <Checkbox label="Esporte e lazer" />
+              <Checkbox label="Casual" />
+              <Checkbox label="Utilitário" />
+              <Checkbox label="Corrida" />
+            </div>
+
+            <p className="font-semibold text-[#474747] text-sm mt-5">Gênero</p>
+            
+            <div className="space-y-2.5">
+              <Checkbox label="Masculino" />
+              <Checkbox label="Feminino" />
+              <Checkbox label="Unisex" />
+            </div>
+
+            <RadioGroup />
+
           </div>
           <div className="w-full grid grid-cols-3 gap-3.5">
             {produtos.map((produto, i) => (

@@ -8,9 +8,9 @@ export default function Header() {
     <header className="w-full h-48 bg-white flex justify-center ">
       <div className="w-full flex flex-col max-w-screen-2xl">
         <div className="mr-28 ml-28 py-8 flex justify-between">
-          <div className="flex items-center justify-between w-full">
+          <div className="flex items-center gap-2 justify-between w-full">
             <Link to="/">
-              <img src={logo} alt="logo" className="h-10 mr-4" />
+              <img src={logo} alt="logo" className="h-10 w-60 min-w-60 mr-4" />
             </Link>
 
             <div className="flex items-center border border-gray-300 rounded max-w-[559px] w-full pr-4">
