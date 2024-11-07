@@ -1,12 +1,9 @@
 import { produtos } from "../../constantes/produtos";
 import CartaoProduto from "../Produtos/cartao-produto";
 import Checkbox from "./checkbox";
-import Radio from "./radio";
+import RadioGroup from "./radio-group";
 
-const ListagemProdutos = () => {
-  
-
-  
+const ListagemProdutos = () => {  
   return (
     <div className="w-full bg-[#F9F8FE] flex items-center flex-col mt-14">
       <div className="w-full max-w-screen-2xl">
@@ -55,10 +52,7 @@ const ListagemProdutos = () => {
               <Checkbox label="Unisex" />
             </div>
 
-            <p className="font-semibold text-[#474747] text-sm mt-5">Estado</p>
-            <div className="space-y-2 5">
-              <Radio />
-            </div>
+            <RadioGroup />
 
           </div>
           <div className="w-full grid grid-cols-3 gap-3.5">
