@@ -2,145 +2,309 @@ import tenis from "../assets/img/tenis.png";
 import jordan from "../assets/img/jordan.png";
 import tenisProduto from "../assets/img/tenis-produto.png";
 
+function gerarNumeroAleatorio(digitos) {
+  return Math.floor(Math.random() * Math.pow(10, digitos));
+}
+
 export const produtos = [
   {
+    id: 1,
     nome: "K-Swiss V8 - Masculino",
     categoria: "Tênis",
     desconto: 0.5,
     preco: 200,
-    imagem: tenisProduto
+    imagem: tenisProduto,
+    subcategoria: `Casual | Nike | REF: ${gerarNumeroAleatorio(8)}`,
+    avaliacao: (Math.random() * (5 - 3.5) + 3.5).toFixed(1),
+    avaliacoes: 13,
+    descricao:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    tamanhos: [39, 40, 41, 42, 43],
+    cores: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
   },
   {
+    id: 2,
     nome: "Air Force One - Masculino",
     categoria: "Tênis",
     desconto: 0.5,
     preco: 400,
-    imagem: tenis
+    imagem: tenis,
+    subcategoria: `Casual | Nike | REF: ${gerarNumeroAleatorio(8)}`,
+    avaliacao: (Math.random() * (5 - 3.5) + 3.5).toFixed(1),
+    avaliacoes: 93,
+    descricao:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    tamanhos: [39, 40, 41, 42, 43],
+    cores: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
   },
   {
+    id: 3,
     nome: "Air Jordan - Masculino",
     categoria: "Tênis",
     desconto: 0.5,
     preco: 320,
-    imagem: jordan
+    imagem: jordan,
+    subcategoria: `Casual | Nike | REF: ${gerarNumeroAleatorio(8)}`,
+    avaliacao: (Math.random() * (5 - 3.5) + 3.5).toFixed(1),
+    avaliacoes: 53,
+    descricao:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    tamanhos: [39, 40, 41, 42, 43],
+    cores: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
   },
   {
+    id: 4,
     nome: "K-Swiss V8 - Masculino",
     categoria: "Tênis",
     desconto: 0.5,
     preco: 200,
-    imagem: tenisProduto
+    imagem: tenisProduto,
+    subcategoria: `Casual | Nike | REF: ${gerarNumeroAleatorio(8)}`,
+    avaliacao: (Math.random() * (5 - 3.5) + 3.5).toFixed(1),
+    avaliacoes: 25,
+    descricao:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    tamanhos: [39, 40, 41, 42, 43],
+    cores: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
   },
   {
+    id: 5,
     nome: "Air Force One - Masculino",
     categoria: "Tênis",
     desconto: 0.5,
     preco: 400,
-    imagem: tenis
+    imagem: tenis,
+    subcategoria: `Casual | Nike | REF: ${gerarNumeroAleatorio(8)}`,
+    avaliacao: (Math.random() * (5 - 3.5) + 3.5).toFixed(1),
+    avaliacoes: 60,
+    descricao:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    tamanhos: [39, 40, 41, 42, 43],
+    cores: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
   },
   {
+    id: 6,
     nome: "Air Jordan - Masculino",
     categoria: "Tênis",
     desconto: 0.5,
     preco: 320,
-    imagem: jordan
+    imagem: jordan,
+    subcategoria: `Casual | Nike | REF: ${gerarNumeroAleatorio(8)}`,
+    avaliacao: (Math.random() * (5 - 3.5) + 3.5).toFixed(1),
+    avaliacoes: 4,
+    descricao:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    tamanhos: [39, 40, 41, 42, 43],
+    cores: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
   },
   {
+    id: 7,
     nome: "K-Swiss V8 - Masculino",
     categoria: "Tênis",
     desconto: 0.5,
     preco: 200,
-    imagem: tenisProduto
+    imagem: tenisProduto,
+    subcategoria: `Casual | Nike | REF: ${gerarNumeroAleatorio(8)}`,
+    avaliacao: (Math.random() * (5 - 3.5) + 3.5).toFixed(1),
+    avaliacoes: 53,
+    descricao:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    tamanhos: [39, 40, 41, 42, 43],
+    cores: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
   },
   {
+    id: 8,
     nome: "Air Force One - Masculino",
     categoria: "Tênis",
     desconto: 0.5,
     preco: 400,
-    imagem: tenis
+    imagem: tenis,
+    subcategoria: `Casual | Nike | REF: ${gerarNumeroAleatorio(8)}`,
+    avaliacao: (Math.random() * (5 - 3.5) + 3.5).toFixed(1),
+    avaliacoes: 68,
+    descricao:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    tamanhos: [39, 40, 41, 42, 43],
+    cores: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
   },
   {
+    id: 9,
     nome: "Air Jordan - Masculino",
     categoria: "Tênis",
     desconto: 0.5,
     preco: 320,
-    imagem: jordan
+    imagem: jordan,
+    subcategoria: `Casual | Nike | REF: ${gerarNumeroAleatorio(8)}`,
+    avaliacao: (Math.random() * (5 - 3.5) + 3.5).toFixed(1),
+    avaliacoes: 23,
+    descricao:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    tamanhos: [39, 40, 41, 42, 43],
+    cores: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
   },
   {
+    id: 10,
     nome: "K-Swiss V8 - Masculino",
     categoria: "Tênis",
     desconto: 0.5,
     preco: 200,
-    imagem: tenisProduto
+    imagem: tenisProduto,
+    subcategoria: `Casual | Nike | REF: ${gerarNumeroAleatorio(8)}`,
+    avaliacao: (Math.random() * (5 - 3.5) + 3.5).toFixed(1),
+    avaliacoes: 41,
+    descricao:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    tamanhos: [39, 40, 41, 42, 43],
+    cores: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
   },
   {
+    id: 11,
     nome: "Air Force One - Masculino",
     categoria: "Tênis",
     desconto: 0.5,
     preco: 400,
-    imagem: tenis
+    imagem: tenis,
+    subcategoria: `Casual | Nike | REF: ${gerarNumeroAleatorio(8)}`,
+    avaliacao: (Math.random() * (5 - 3.5) + 3.5).toFixed(1),
+    avaliacoes: 51,
+    descricao:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    tamanhos: [39, 40, 41, 42, 43],
+    cores: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
   },
   {
+    id: 12,
     nome: "Air Jordan - Masculino",
     categoria: "Tênis",
     desconto: 0.3,
     preco: 320,
-    imagem: jordan
+    imagem: jordan,
+    subcategoria: `Casual | Nike | REF: ${gerarNumeroAleatorio(8)}`,
+    avaliacao: (Math.random() * (5 - 3.5) + 3.5).toFixed(1),
+    avaliacoes: 16,
+    descricao:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    tamanhos: [39, 40, 41, 42, 43],
+    cores: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
   },
   {
+    id: 13,
     nome: "K-Swiss V8 - Masculino",
     categoria: "Tênis",
     desconto: 0.3,
     preco: 200,
-    imagem: tenisProduto
+    imagem: tenisProduto,
+    subcategoria: `Casual | Nike | REF: ${gerarNumeroAleatorio(8)}`,
+    avaliacao: (Math.random() * (5 - 3.5) + 3.5).toFixed(1),
+    avaliacoes: 32,
+    descricao:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    tamanhos: [39, 40, 41, 42, 43],
+    cores: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
   },
   {
+    id: 14,
     nome: "Air Force One - Masculino",
     categoria: "Tênis",
     desconto: 0.3,
     preco: 400,
-    imagem: tenis
+    imagem: tenis,
+    subcategoria: `Casual | Nike | REF: ${gerarNumeroAleatorio(8)}`,
+    avaliacao: (Math.random() * (5 - 3.5) + 3.5).toFixed(1),
+    avaliacoes: 58,
+    descricao:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    tamanhos: [39, 40, 41, 42, 43],
+    cores: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
   },
   {
+    id: 15,
     nome: "Air Jordan - Masculino",
     categoria: "Tênis",
     desconto: 0.3,
     preco: 320,
-    imagem: jordan
+    imagem: jordan,
+    subcategoria: `Casual | Nike | REF: ${gerarNumeroAleatorio(8)}`,
+    avaliacao: (Math.random() * (5 - 3.5) + 3.5).toFixed(1),
+    avaliacoes: 89,
+    descricao:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    tamanhos: [39, 40, 41, 42, 43],
+    cores: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
   },
   {
+    id: 16,
     nome: "K-Swiss V8 - Masculino",
     categoria: "Tênis",
     desconto: 0.3,
     preco: 200,
-    imagem: tenisProduto
+    imagem: tenisProduto,
+    subcategoria: `Casual | Nike | REF: ${gerarNumeroAleatorio(8)}`,
+    avaliacao: (Math.random() * (5 - 3.5) + 3.5).toFixed(1),
+    avaliacoes: 30,
+    descricao:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    tamanhos: [39, 40, 41, 42, 43],
+    cores: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
   },
   {
+    id: 17,
     nome: "Air Force One - Masculino",
     categoria: "Tênis",
     desconto: 0.3,
     preco: 400,
-    imagem: tenis
+    imagem: tenis,
+    subcategoria: `Casual | Nike | REF: ${gerarNumeroAleatorio(8)}`,
+    avaliacao: (Math.random() * (5 - 3.5) + 3.5).toFixed(1),
+    avaliacoes: 74,
+    descricao:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    tamanhos: [39, 40, 41, 42, 43],
+    cores: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
   },
   {
+    id: 18,
     nome: "Air Jordan - Masculino",
     categoria: "Tênis",
     desconto: 0.3,
     preco: 320,
-    imagem: jordan
+    imagem: jordan,
+    subcategoria: `Casual | Nike | REF: ${gerarNumeroAleatorio(8)}`,
+    avaliacao: (Math.random() * (5 - 3.5) + 3.5).toFixed(1),
+    avaliacoes: 15,
+    descricao:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    tamanhos: [39, 40, 41, 42, 43],
+    cores: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
   },
   {
+    id: 19,
     nome: "K-Swiss V8 - Masculino",
     categoria: "Tênis",
     desconto: 0.3,
     preco: 200,
-    imagem: tenisProduto
+    imagem: tenisProduto,
+    subcategoria: `Casual | Nike | REF: ${gerarNumeroAleatorio(8)}`,
+    avaliacao: (Math.random() * (5 - 3.5) + 3.5).toFixed(1),
+    avaliacoes: 75,
+    descricao:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    tamanhos: [39, 40, 41, 42, 43],
+    cores: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
   },
   {
+    id: 20,
     nome: "Air Force One - Masculino",
     categoria: "Tênis",
     desconto: 0.3,
     preco: 400,
-    imagem: tenis
+    imagem: tenis,
+    subcategoria: `Casual | Nike | REF: ${gerarNumeroAleatorio(8)}`,
+    avaliacao: (Math.random() * (5 - 3.5) + 3.5).toFixed(1),
+    avaliacoes: 97,
+    descricao:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.",
+    tamanhos: [39, 40, 41, 42, 43],
+    cores: ["#6FEEFF", "#FF6969", "#5E5E5E", "#6D70B7"],
   },
-]
+];
